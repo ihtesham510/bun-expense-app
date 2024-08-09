@@ -5,7 +5,8 @@
 	"scripts": {
 		"start": "bun server/index.ts",
 		"dev": "bun --watch server/index.ts",
-		"format": "bunx prettier . --write"
+		"format": "bunx prettier . --write",
+		"build": "cd ./client && bun install && bun run build"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
